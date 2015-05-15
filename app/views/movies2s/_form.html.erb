@@ -27,6 +27,14 @@
     <%= f.label :actor_id %><br>
     <%= f.collection_select :actor_id, Actor.all, :id, :name  %>
   </div>
+	<div class="field">
+	<%= f.label :rating %><br>
+	<%= f.text_area :rating %>
+  </div>
+	<div class="field">
+		<%= f.label :poster %><br>
+		<%= f.text_area :poster %>
+	</div>
   <div class="actions">
     <%= f.submit %>
   </div>
